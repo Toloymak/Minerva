@@ -12,6 +12,8 @@ import { LandingPageComponent } from './pages/landing-page/landing-page.componen
 import { AuthorisedSideNavComponent } from './layout/authorised/authorised-side-nav/authorised-side-nav.component';
 import { AuthorisedLayoutComponent } from './layout/authorised/authorised-layout/authorised-layout.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -24,11 +26,13 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
     LandingPageComponent,
     AuthorisedSideNavComponent,
     AuthorisedLayoutComponent,
-    DashboardComponent
+    DashboardComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

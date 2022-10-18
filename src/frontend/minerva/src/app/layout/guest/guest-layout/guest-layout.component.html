@@ -1,5 +1,16 @@
-<div>
-  <app-guest-top-nav></app-guest-top-nav>
+<style>
+  .page-content {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+    min-height: 100vh;
+    font-size: 16;
+  }
+</style>
+
+<div class="page-content">
+  <app-header></app-header>
+  <!--<app-guest-top-nav></app-guest-top-nav>-->
   <app-page-content></app-page-content>
   <app-guest-footer></app-guest-footer>
 </div>
